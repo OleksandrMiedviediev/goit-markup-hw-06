@@ -30,10 +30,13 @@ ul, ol {
 /*HEADER*/
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
 .header {
     display: flex;
@@ -42,10 +45,12 @@ ul, ol {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
 
 .header-container {
     display: flex;
+    padding: 17.5px 0;
 }
 
 .header-navigation {
@@ -65,7 +70,6 @@ ul, ol {
 
 .header-logo {
     color: #404bbf;
-    margin-right: 76px;
 }
 
 .header-logo-span {
@@ -73,7 +77,7 @@ ul, ol {
 }
 
 .header-menu {
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
@@ -87,7 +91,14 @@ ul, ol {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.menu-open-btn {
+    margin: 0 auto;
+    border: none;
+    background-color: #fff;
+}
+.btn-svg {
+    justify-content: center;
+}
 .current::after {
     content: '';
     position: absolute;
@@ -104,7 +115,7 @@ ul, ol {
 
 .header-contacts {
     font-style: normal;
-    display: flex;
+    display: none;
     gap: 40px;
     padding: 24px 0;
 }
@@ -134,19 +145,22 @@ ul, ol {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 72px 0;
     display: flex;
-    max-width: 1440px;
+    flex-direction: column;
+    width: 100%;
 }
 .section-title {
     color: #ffffff;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 220px;
+    max-height: 160px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    text-transform: capitalize;
 }
 
 .section-button {
@@ -171,22 +185,26 @@ ul, ol {
 
 /*section two*/
 .section-advantages {
-    padding: 120px 0;
+    padding: 96px 0;
+    display: flex;
 }
 .advantages-list-title {
     color: #2E2F42;
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 .section-advantages-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
+
 .container-section-icons {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -194,15 +212,14 @@ ul, ol {
     border-radius: 4px;
     margin-bottom: 8px;
 }
-.section-advantages-item {
-    width: calc((100% - 72px) / 4);
-}
+
 .advantages-list-text {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -215,11 +232,11 @@ ul, ol {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-/*section three*/
 
+/*section three*/
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0;
 }
   
 .team-title {
@@ -234,12 +251,12 @@ ul, ol {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
      0px 1px 1px rgba(46, 47, 66, 0.16), 
      0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -271,6 +288,9 @@ ul, ol {
     align-items: center;
     gap: 24px;
 }
+.team-item-img {
+    width: 100%;
+}
 .team-item-icons {
     width: 40px;
     height: 40px;
@@ -296,7 +316,7 @@ ul, ol {
 
 .portfolio {
     background-color: #FFFFFF;
-    padding: 120px 0 120px 0;
+    padding: 96px 0;
 }
 
 .portfolio-title {
@@ -311,8 +331,8 @@ ul, ol {
 
 .portfolio-list {
     display: flex;
-    column-gap: 24px;
-    row-gap: 48px;
+    flex-direction: column;
+    gap: 48px 24px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -322,7 +342,7 @@ ul, ol {
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3);
+    width: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -724,3 +744,76 @@ ul, ol {
     border: none;
     fill: #F4F4FD;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .section-title {
+        max-height: 120px;
+        max-width: 496px;
+        width: 100%;
+        font-size: 56px;
+        margin-bottom: 36px;
+        text-transform: none;
+    }
+    .section-advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .advantages-list-title {
+        text-align: start;
+    }
+    .section-advantages-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .team-item {
+        width: calc((100% - 48px) / 2);
+    }
+    .portfolio-list {
+        flex-direction: row;
+    }
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
+    
+}
+  
+  @media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section-title {
+        margin-bottom: 48px;
+    }
+    .container-section-icons {
+        display: flex;
+    }
+    .section-advantages {
+        padding: 120px 0;
+    }
+    .section-advantages-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .team {
+        padding: 120px 0;
+    }
+    .team-item{
+        width: calc((100% - 72px) / 4);
+    }
+    .portfolio {
+        padding: 120px 0;
+    }
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+    }
+}
+  
