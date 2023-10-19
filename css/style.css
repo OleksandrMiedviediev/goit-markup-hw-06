@@ -190,7 +190,6 @@ ul, ol {
 }
 .mob-list-icons {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 40px;
 }
@@ -655,8 +654,8 @@ ul, ol {
     pointer-events: all;
 }
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
@@ -695,8 +694,8 @@ ul, ol {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
-    width: 360px;
-    height: 24px;
+    width: 256px;
+    height: 48px;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -734,7 +733,7 @@ ul, ol {
 }
 .modal-input-btn {
     display: block;
-    margin: 24px 95px;
+    margin: auto;
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
@@ -753,6 +752,7 @@ ul, ol {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-label {
     display: block;
     color: #8E8F99;
@@ -865,10 +865,14 @@ ul, ol {
     .header-menu {
         display: flex;
     }
+    .header-menu-link {
+        padding: 20px 0 16px 0;
+    }
     .header-contacts {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        margin: 16px 0;
+    }
+    .header-contacts-link {
+        font-size: 12px;
     }
     .header-container {
         display: flex;
@@ -952,6 +956,11 @@ ul, ol {
         url(../images/people-office-2x.jpg);
     }
   }
+    .section {
+        height: 600px;
+        padding: 0;
+        justify-content: center;
+    }
     .container {
         max-width: 1158px;
         padding-left: 15px;
@@ -963,6 +972,9 @@ ul, ol {
     .header-contacts {
         flex-direction: row;
         gap: 40px;
+    }
+    .header-contacts-link {
+        font-size: 16px;
     }
     .section-title {
         margin-bottom: 48px;
