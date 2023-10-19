@@ -464,19 +464,24 @@ ul, ol {
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 97.5px 0;
 }
 .footer-content {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
 }
 .footer-container {
-    margin-right: 120px;
+    margin-bottom: 72px;
 }
 .footer-container-form {
-    margin-right: 120px;
-    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .footer-logo-span {
@@ -496,7 +501,8 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-text {
@@ -508,7 +514,11 @@ ul, ol {
     width: 264px;
 }
 .footer-media {
-        margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 72px;
 }
 .footer-media-text {
     font-weight: 500;
@@ -560,7 +570,9 @@ ul, ol {
 }
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-form-label {
     line-height: 1.17;
@@ -573,12 +585,12 @@ ul, ol {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-left: 16px;
     background-color: transparent;
-    margin-right: 24px;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #ffffff;
+    margin-bottom: 16px;
 
 }
 .footer-form-input::placeholder {
@@ -885,7 +897,22 @@ ul, ol {
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
+    .footer-content {
+        gap: 0 24px ;
+    }
+    .footer-container-form {
+        flex-direction: column;
+    }
+    .footer-form-input {
+        margin-right: 24px;
+    }
     
+    .footer-media {
+        display: block;
+    }
+    .footer-logo {
+        justify-content: left;
+    }
 }
   
   @media screen and (min-width: 1158px) {
@@ -927,6 +954,19 @@ ul, ol {
     }
     .portfolio-item {
         width: calc((100% - 48px) / 3);
+    }
+    .footer {
+        padding: 100px 0;
+    }
+    .footer-content {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .footer-container {
+        margin-bottom: 0;
+    }
+    .footer-media {
+        margin-bottom: 0;
     }
 }
   
