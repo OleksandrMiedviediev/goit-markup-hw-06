@@ -175,8 +175,6 @@ ul, ol {
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-.mob-contacts-item:last-child {
     margin-bottom: 48px;
 }
 .mob-contacts-link {
