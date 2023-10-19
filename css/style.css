@@ -939,6 +939,13 @@ ul, ol {
     .footer-logo {
         justify-content: left;
     }
+    .modal {
+        width: 408px;
+    }
+    .modal-title {
+        width: 360px;
+        height: 100%;
+    }
 }
   
   @media screen and (min-width: 1158px) {
