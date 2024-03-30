@@ -955,13 +955,17 @@ ul, ol {
             url(../images/people-office.jpg);
     }
     @media (min-resolution: 192dpi) {
-    .section {
-      background-image: linear-gradient(
-        rgba(46, 47, 66, 0.70), 
-        rgba(46, 47, 66, 0.70)),
-        url(../images/people-office-2x.jpg);
+        .section {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70), 
+            rgba(46, 47, 66, 0.70)),
+            url(../images/people-office-2x.jpg);
+        }
     }
-  }
+    .header {
+      border-bottom: 1px solid #e7e9fc;
+      box-shadow: none;
+    }
     .section {
         height: 600px;
         padding: 0;
