@@ -557,7 +557,9 @@ ul, ol {
     margin-left: 16px;
 }
 .footer-item-link:hover, 
-.footer-item-link:focus {
+.footer-item-link:focus,
+.footer-form-btn:hover,
+.footer-form-btn:focus {
     background-color: #31d0aa;
 }
 .footer-icon {
@@ -624,6 +626,7 @@ ul, ol {
     min-width: 165px;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item-icon{
