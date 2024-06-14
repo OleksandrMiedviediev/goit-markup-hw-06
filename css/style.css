@@ -559,7 +559,8 @@ ul, ol {
 .footer-item-link:hover, 
 .footer-item-link:focus,
 .footer-form-btn:hover,
-.footer-form-btn:focus {
+.footer-form-btn:focus,
+.mob-item-link:hover,.mob-item-link:focus {
     background-color: #31d0aa;
 }
 .footer-icon {
