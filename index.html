@@ -29,9 +29,8 @@
             </ul>
           </nav>
       
-
-        <address>
-          <ul class="nav-list">
+        <address> 
+          <ul class="nav-list address">
             <li>
               <a href="mailto:info@devstudio.com" class="link-address">info@devstudio.com</a>
             </li>
@@ -40,6 +39,10 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="btn-menu" id="btnId">
+          <svg class="menu-icon" width="17" height="15" >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg></button>
       </div>
     </header>
 
@@ -47,7 +50,7 @@
         <section id="hero" class="hero">
           <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="btn-order">Order Service</button>
+            <button type="button" class="btn-order" id="btnOrderId">Order Service</button>
           </div>
         </section>
 
@@ -100,7 +103,9 @@
           <h2 class="title-2 title-team">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" class="img-team" />
+              <img srcset="./images/team-1.jpg 1x, 
+              ./images/team-1-2x.jpg 2x" 
+              src="./images/team-1.jpg" alt="Mark Guerrero" width="264" class="img-team" />
               <div class="team-group">
                 <h3 class="title-3 team-title">Mark Guerrero</h3>
                 <p class="text team-text">Product Designer</p>
@@ -133,7 +138,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" class="img-team" />
+              <img srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x" src="./images/team-2.jpg" alt="Tom Ford" width="264" class="img-team" />
               <div class="team-group">
                 <h3 class="title-3 team-title">Tom Ford</h3>
                 <p class="text team-text">Frontend Developer</p>
@@ -166,7 +171,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" class="img-team" />
+              <img srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x" src="./images/team-3.jpg" alt="Camila Garcia" width="264" class="img-team" />
               <div class="team-group">
                 <h3 class="title-3 team-title">Camila Garcia</h3>
                 <p class="text team-text">Marketing</p>
@@ -199,7 +204,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" class="img-team" />
+              <img srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x" src="./images/team-4.jpg" alt="Daniel Wilson" width="264" class="img-team" />
               <div class="team-group">
                 <h3 class="title-3 team-title">Daniel Wilson</h3>
                 <p class="text team-text">UI Designer</p>
@@ -241,62 +246,62 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-1.jpg" alt="Banking App" width="360" />
+                <img srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1-2x.jpg 2x" src="./images/portfolio-1.jpg" alt="Banking App" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Banking App</h3>
-                <p class="text">App</p>
+                <p class="text text-portfolio-item">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-2.jpg" alt="Cashless Payment" width="360" />
+                <img srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2-2x.jpg 2x" src="./images/portfolio-2.jpg" alt="Cashless Payment" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Cashless Payment</h3>
-                <p class="text">Marketing</p>
+                <p class="text text-portfolio-item">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-3.jpg" alt="Meditation App" width="360" />
+                <img srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3-2x.jpg 2x" src="./images/portfolio-3.jpg" alt="Meditation App" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Meditation App</h3>
-                <p class="text">App</p>
+                <p class="text text-portfolio-item">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-4.jpg" alt="Taxi Service" width="360" />
+                <img srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4-2x.jpg 2x" src="./images/portfolio-4.jpg" alt="Taxi Service" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Taxi Service</h3>
-                <p class="text">Marketing</p>
+                <p class="text text-portfolio-item">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-5.jpg" alt="Screen Illustrations" width="360" />
+                <img srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5-2x.jpg 2x" src="./images/portfolio-5.jpg" alt="Screen Illustrations" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Screen Illustrations</h3>
-                <p class="text">Design</p>
+                <p class="text text-portfolio-item">Design</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-container">
-                <img src="./images/portfolio-6.jpg" alt="Online Courses" width="360" />
+                <img srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6-2x.jpg 2x" src="./images/portfolio-6.jpg" alt="Online Courses" width="360" />
                 <p class="portfolio-text-hover">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="group">
                 <h3 class="title-3 title-portfolio-item">Online Courses</h3>
-                <p class="text">Marketing</p>
+                <p class="text text-portfolio-item">Marketing</p>
               </div>
             </li>
           </ul>
@@ -362,9 +367,77 @@
           </div>
       </div>
     </footer>
+    <div id="modalId" class="mob-menu">
+      <div>
+        <button id="closeId" type="button" class="menu-btn">
+          <svg class="mob-item-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-header">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link mob-current" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mob-contacts">
+          <li class="mob-contacts-item ">
+            <a class="mob-contacts-link mob-current" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-contacts-item">
+            <a
+              class="mob-contacts-link "
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-list-icons">
+          <li class="mob-item-icons">
+            <a class="mob-item-link" href="">
+              <svg class="mob-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-icons">
+            <a class="mob-item-link" href="">
+              <svg class="mob-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-icons">
+            <a class="mob-item-link" href="">
+              <svg class="mob-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-icons">
+            <a class="mob-item-link" href="">
+              <svg class="mob-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="backdrop" id="modal">
       <div class="modal">
-        <button type="button" class="modal-btn">
+        <button type="button" class="modal-btn" id="closeModalId">
           <svg class="modal-item-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg> 
@@ -434,5 +507,6 @@
         </form>
       </div>
     </div>
+     <script src="./js/index.js" type="module"></script>
   </body>
 </html>

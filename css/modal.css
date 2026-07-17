@@ -8,6 +8,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    overflow-y: auto;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .is-open {
@@ -16,15 +17,18 @@
     pointer-events: all;
 }
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: calc(100% - 32px);
+    max-width: 288px;
+    min-height: 623px;
+    max-height: calc(100vh - 16px);
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
-    padding: 72px 24px 24px 24px; 
+    padding: 72px 16px 24px 16px;
+    overflow-y: auto;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -59,8 +63,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
-    width: 360px;
-    height: 24px;
+    width: 100%;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -70,6 +73,9 @@
     margin-bottom: 16px;
     
 }
+.modal-form {
+    width: 100%;
+}
 .modal-field {
     margin-bottom: 8px;
 }
@@ -78,6 +84,7 @@
 }
 .modal-input {
     width: 100%;
+    min-width: 0;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -133,7 +140,8 @@
     position: relative;
 }
 .modal-textarea {
-    min-width: 360px;
+    width: 100%;
+    min-width: 0;
     min-height: 120px;
     border-radius: 4px;
     font-size: 12px;
@@ -178,9 +186,6 @@
 .modal-input-btn:focus {
     background-color: #404bbf;
 }
-.check-text a {
-    color: #4D5AE5;
-}
 .check-text-box {
     width: 16px;
     height: 16px;
@@ -219,3 +224,10 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+@media screen and (min-width: 768px){
+    .modal {
+        max-width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+}
