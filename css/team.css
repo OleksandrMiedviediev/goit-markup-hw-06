@@ -66,6 +66,10 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: center;
+        row-gap: 64px;
+    }
+    .team-item{
+        margin-bottom: 0;
     }
 }
 

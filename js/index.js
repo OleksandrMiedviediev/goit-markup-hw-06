@@ -1,4 +1,4 @@
-const mobileMenu = document.getElementById('modalId');
+const mobileMenu = document.getElementById('mobile-menu');
 const openMenuBtn = document.getElementById('btnId');
 const closeMenuBtn = document.getElementById('closeId');
 const orderBtn = document.getElementById('btnOrderId');

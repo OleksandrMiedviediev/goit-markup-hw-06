@@ -22,7 +22,9 @@
     .features-item{
         width: calc((100% - 24px) / 2);
     }
-    
+    .features-title{
+        text-align: left;
+    }
 }
 
 
@@ -30,6 +32,9 @@
     .features-list{
         flex-wrap: nowrap;
         gap: 24px;
+    }
+    .features-item{
+        width: calc((100% - 72px) / 4);
     }
     .features-icon-box{
         background-color: #F4F4FD;
