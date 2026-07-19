@@ -45,6 +45,12 @@
         .header{
             border-bottom: 1px solid #e7e9fc;
         }
+        .header-container{
+            justify-content: flex-start;
+        }
+        .logo{
+            margin-right: 120px;
+        }
         .link-nav{
             color: #2E2F42;
             font-weight: 500;
@@ -70,7 +76,7 @@
             color: #404BBF;
         }
         .nav{
-            margin-right: 129px;
+            margin-right: auto;
         }
         .nav-list{
             display: flex;
@@ -114,9 +120,6 @@
         }
         .header-container{
             max-width: 1440px;
-        }
-        .nav{
-            margin-right: 340px;
         }
         .address{
             display: flex;

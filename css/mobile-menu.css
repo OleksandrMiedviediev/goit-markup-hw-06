@@ -53,9 +53,6 @@
     flex-direction: column;
     gap: 40px;
 }
-.mob-menu-item:not(:last-child) {
-    margin-bottom: 24px;
-}
 
 .mob-menu-link {
     color: #2E2F42;
@@ -78,6 +75,12 @@
     font-size: 20px;
     line-height: 1.12em;
     letter-spacing: 0.02em;
+}
+.mob-address {
+    font-style: normal;
+}
+.mob-phone-link {
+    color: #4d5ae5;
 }
 .mob-current { 
     color: #404bbf;

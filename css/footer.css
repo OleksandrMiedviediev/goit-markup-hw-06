@@ -165,6 +165,7 @@
     }
     .footer-media-list{
         margin-bottom: 0;
+        justify-content: flex-start;
     }
     .footer-container-form{
         align-items: flex-start;
